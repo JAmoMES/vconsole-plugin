@@ -1,0 +1,29 @@
+{
+	"name": "vconsole-plugin",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"prepare": "husky",
+		"lint": "eslint .",
+		"test": "turbo test --concurrency=1 --",
+		"build": "turbo build",
+		"type-check": "turbo type-check"
+	},
+	"license": "MIT",
+	"main": "index.js",
+	"devDependencies": {
+		"@changesets/cli": "^2.27.12",
+		"@rollup/plugin-commonjs": "^28.0.2",
+		"@rollup/plugin-node-resolve": "^16.0.0",
+		"@rollup/plugin-typescript": "^12.1.2",
+		"eslint": "8.57.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"rollup": "^4.34.7",
+		"turbo": "^2.4.2",
+		"typescript": "^5.7.3"
+	}
+}

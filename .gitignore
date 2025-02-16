@@ -1,0 +1,26 @@
+.DS_Store
+node_modules/
+dist
+cache
+/public
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+**/test/unit/coverage
+**/test/unit/junit_report
+**/test/e2e/reports
+coverage
+selenium-debug.log
+selenium-server.log
+tsconfig.tsbuildinfo
+**/template-*/yarn.lock
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+.env
+.turbo

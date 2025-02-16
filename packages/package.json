@@ -1,0 +1,7 @@
+{
+  "name": "@vconsole/vconsole-plugin-custom-function",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
