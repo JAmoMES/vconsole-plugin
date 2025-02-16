@@ -1,7 +1,11 @@
 {
-    "extends": ["standard"],
-    "rules": {
-        "no-console": "off",
-        "semi": ["error", "never"]
-    }
+	"parser": "@typescript-eslint/parser",
+	"extends": ["standard"],
+	"rules": {
+		"no-console": "off",
+		"semi": ["error", "never"],
+		"no-tabs": "off",
+		"indent": "off",
+		"comma-dangle": "off"
+	}
 }

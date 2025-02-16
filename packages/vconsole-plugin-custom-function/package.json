@@ -1,0 +1,32 @@
+{
+	"name": "@vconsole/vconsole-plugin-custom-function",
+	"version": "0.1.0",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "rollup -c && node --experimental-modules ./scripts/prependReferrer.mjs",
+		"type-check": "tsc --noEmit"
+	},
+	"files": [
+		"dist/**/*.js",
+		"dist/**/*.cjs",
+		"dist/**/*.d.ts",
+		"CHANGELOG.md"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"devDependencies": {
+		"fs": "^0.0.1-security",
+		"rollup-plugin-copy": "^3.5.0",
+		"vconsole": "^3.15.1"
+	},
+	"peerDependencies": {
+		"vconsole": ">=3.15.1"
+	}
+}
