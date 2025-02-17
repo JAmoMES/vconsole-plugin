@@ -1,0 +1,30 @@
+{
+	"name": "vite-vconsole-plugin-icon-size",
+	"version": "0.0.0",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"type-check": "tsc --noEmit"
+	},
+	"files": [
+		"dist/**/*.js",
+		"dist/**/*.cjs",
+		"dist/**/*.d.ts",
+		"CHANGELOG.md"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"devDependencies": {
+		"vite": "^6.1.0"
+	},
+	"peerDependencies": {
+		"vconsole": ">=5"
+	}
+}
