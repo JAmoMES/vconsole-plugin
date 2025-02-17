@@ -1,12 +1,12 @@
 {
-	"name": "vconsole-plugin-custom-function",
+	"name": "vite-vconsole-plugin-icon-size",
 	"version": "0.1.0",
 	"type": "module",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "rollup -c && node --experimental-modules ./scripts/prependReferrer.mjs",
+		"build": "rollup -c",
 		"type-check": "tsc --noEmit"
 	},
 	"files": [
@@ -22,11 +22,9 @@
 		}
 	},
 	"devDependencies": {
-		"fs": "^0.0.1-security",
-		"rollup-plugin-copy": "^3.5.0",
-		"vconsole": "^3.15.1"
+		"vite": "^6.1.0"
 	},
 	"peerDependencies": {
-		"vconsole": ">=3.15.1"
+		"vconsole": ">=5"
 	}
 }

@@ -6,14 +6,14 @@ class VConsoleFunctionPlugin {
 
 	private functions: CustomFunction[] = []
 
-	constructor (vConsole: VConsole, functions: CustomFunction[]) {
+	constructor(vConsole: VConsole, functions: CustomFunction[]) {
 		this.vConsole = vConsole
 		this.functions = functions
 		this.init()
 	}
 
-	private init () {
-		const plugin = new VConsole.VConsolePlugin('customFunction', 'Function Logger')
+	private init() {
+		const plugin = new VConsole.VConsolePlugin('customFunction', 'Function')
 
 		plugin.on('init', () => {
 			console.log('Vconsole customFunction plugin init done.')

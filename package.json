@@ -15,9 +15,7 @@
 	},
 	"license": "MIT",
 	"main": "index.js",
-	"dependencies": {
-		"promise-until-tired": "^1.0.1"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.12",
 		"@rollup/plugin-commonjs": "^28.0.2",

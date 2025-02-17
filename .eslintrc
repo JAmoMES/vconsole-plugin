@@ -6,6 +6,7 @@
 		"semi": ["error", "never"],
 		"no-tabs": "off",
 		"indent": "off",
-		"comma-dangle": "off"
+		"comma-dangle": "off",
+		"space-before-function-paren": "off"
 	}
 }
