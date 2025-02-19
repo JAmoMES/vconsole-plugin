@@ -20,8 +20,8 @@ export default function VConsoleCopyIconSizePlugin({
             height: ${iconSize}px !important;
           }
 					.vc-icon svg {
-            width: ${iconSize} !important;
-            height: ${iconSize} !important;
+            width: ${iconSize}px !important;
+            height: ${iconSize}px !important;
 					}
         </style></head>`,
 			)
